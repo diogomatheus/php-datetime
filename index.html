@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Máquina do Tempo</title>
+<meta http-equiv="Content-Type"
+    content="text/html; charset=UTF-8">
+<style type="text/css">
+    <!--
+    .simple {
+        width: 25px;
+    }
+    .full {
+        width: 50px;
+    }
+    -->
+</style>
+</head>
+<body>
+    <h2>Máquina do Tempo</h2>
+    <form action="datetime.php" method="post">
+        <div id="firstDate">
+            Dia: <input type="text" name="dayOne" class="simple" />
+            Mês: <input type="text" name="monthOne" class="simple" />
+            Ano: <input type="text" name="yearOne" class="full" /> &nbsp;
+            Hora: <input type="text" name="hourOne" class="simple" />
+            Minuto: <input type="text" name="minuteOne" class="simple" />
+            Segundo: <input type="text" name="secondOne" class="simple" />
+        </div>
+        <br />
+        <div id="operationType">
+            Tipo de operação:
+            <select name="operationType">
+            <option value="A">Adição</option>
+            <option value="S">Subtração</option>
+            <option value="D">Diferença</option>
+            <option value="C">Comparação</option>
+        </select>
+        </div>
+        <br />
+        <div id="secondDate">
+            Dia: <input type="text" name="dayTwo" class="simple" />
+            Mês: <input type="text" name="monthTwo" class="simple" />
+            Ano: <input type="text" name="yearTwo" class="full" /> &nbsp;
+            Hora: <input type="text" name="hourTwo" class="simple" />
+            Minuto: <input type="text" name="minuteTwo" class="simple" />
+            Segundo: <input type="text" name="secondTwo" class="simple" />
+        </div>
+        <br />
+        <input type="submit" value="Calcular" />
+    </form>
+</body>
+</html>
